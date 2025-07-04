@@ -1,0 +1,207 @@
+.about-us-section {
+  padding: 80px 50px;
+  text-align: center;
+}
+
+.about-us-section h1 {
+  font-size: 40px;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.about-us-section .intro-text {
+  max-width: 800px;
+  margin: 0 auto 60px;
+  font-size: 18px;
+  color: #444;
+  line-height: 1.8;
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+.team-card {
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  padding: 30px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.team-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.team-card h2 {
+  font-size: 22px;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.team-card h4 {
+  color: #0077b6;
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.team-card p {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.form-box {
+  width: 450px;
+  max-width: 90%;
+  margin: 80px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.form-box h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #003366;
+}
+
+.form-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.form-box button {
+  width: 100%;
+  padding: 12px;
+  background-color: #003366;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.form-box button:hover {
+  background-color: #0055aa;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .about-us-section {
+    padding: 60px 30px;
+  }
+
+  .about-us-section h1 {
+    font-size: 32px;
+  }
+
+  .about-us-section .intro-text {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .team-container {
+    gap: 30px;
+  }
+
+  .team-card img {
+    height: 200px;
+  }
+
+  .team-card h2 {
+    font-size: 20px;
+  }
+
+  .team-card h4 {
+    font-size: 14px;
+  }
+
+  .team-card p {
+    font-size: 14px;
+  }
+
+  .form-box {
+    width: 90%;
+    margin: 50px auto;
+    padding: 25px;
+  }
+
+  .form-box h2 {
+    font-size: 20px;
+  }
+
+  .form-box input,
+  .form-box button {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-us-section {
+    padding: 40px 20px;
+  }
+
+  .about-us-section h1 {
+    font-size: 28px;
+  }
+
+  .about-us-section .intro-text {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .team-container {
+    gap: 20px;
+  }
+
+  .team-card img {
+    height: 160px;
+  }
+
+  .team-card h2 {
+    font-size: 18px;
+  }
+
+  .team-card h4 {
+    font-size: 13px;
+  }
+
+  .team-card p {
+    font-size: 13px;
+  }
+
+  .form-box {
+    width: 95%;
+    margin: 30px auto;
+    padding: 20px;
+  }
+
+  .form-box h2 {
+    font-size: 18px;
+  }
+
+  .form-box input,
+  .form-box button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
